@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2E6A5C">
 <title>Psicólogo Matheus José</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Psicólogo clínico e do esporte. Terapia para relacionamentos e vínculos e acompanhamento psicológico para atletas de todas as modalidades. Presencial em Cotia/SP e online. CRP 06/197033.">
@@ -28,6 +34,9 @@
   --accent:#6FB8A5;--accent-ink:#0B1517;--warm:#D9A06A;--card:#132124;color-scheme:dark}
 
 *{box-sizing:border-box}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
@@ -186,10 +195,14 @@ footer{padding-block:40px;font-size:14px;color:var(--ink-soft);border-top:1px so
 footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between}
 footer nav{display:flex;flex-wrap:wrap;gap:20px}
 
-.wa-float{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;width:58px;height:58px;border-radius:50%;background:#1F9D55;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}
-.wa-float svg{width:30px;height:30px}
+.wa-float{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;height:66px;min-width:66px;padding:0 18px;border-radius:999px;background:#1F9D55;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;font-size:17px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.wa-float svg{width:34px;height:34px;flex:none}
+.wa-float span{display:none}
+@media (max-width:760px){.wa-float{left:calc(16px + env(safe-area-inset-left,0px));right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(14px + env(safe-area-inset-bottom,0px));height:60px}.wa-float span{display:inline}footer{padding-bottom:110px}}
+.reviews-widget{min-height:420px}
 </style>
-
+</head>
+<body>
 <nav class="top" aria-label="Principal">
   <div class="wrap">
     <a class="brand" href="#inicio"><b>Matheus José</b><span>Psicólogo clínico e do esporte</span></a>
@@ -246,7 +259,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
     </div>
     <!-- Avaliações automáticas do Google (Elfsight) -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
-    <div class="elfsight-app-260e0b91-b85f-4c3e-90f8-65ce4b4a9a46" data-elfsight-app-lazy></div>
+    <div class="reviews-widget"><div class="elfsight-app-260e0b91-b85f-4c3e-90f8-65ce4b4a9a46"></div></div>
     <div class="more"><a class="btn ghost" href="https://www.google.com/search?q=Psic%C3%B3logo+Matheus+Jos%C3%A9" target="_blank" rel="noopener">Ver todas no Google</a></div>
   </div>
 </section>
@@ -418,7 +431,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
   </div>
 </footer>
 
-<a class="wa wa-float" href="#" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg></a>
+<a class="wa wa-float" href="#" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg><span>Agendar pelo WhatsApp</span></a>
 
 <script>
 // WhatsApp
@@ -439,6 +452,8 @@ document.querySelectorAll("a.wa").forEach(a=>{a.href=WA;a.target="_blank";a.rel=
       for(let j=i+1;j<pts.length;j++){const q=pts[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<D){ctx.globalAlpha=(1-d/D)*.28;ctx.strokeStyle=a;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke();}}
       ctx.globalAlpha=.55;ctx.fillStyle=i%7===0?w:a;ctx.beginPath();ctx.arc(p.x,p.y,i%7===0?3:2,0,7);ctx.fill();}
     ctx.globalAlpha=1;if(!still)requestAnimationFrame(draw);}
-  size();draw();addEventListener("resize",()=>{size();if(still)draw();});
+  size();draw();let lastW=innerWidth;addEventListener("resize",()=>{if(innerWidth===lastW)return;lastW=innerWidth;size();if(still)draw();});
 })();
 </script>
+</body>
+</html>
