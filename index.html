@@ -435,7 +435,12 @@ footer nav{display:flex;flex-wrap:wrap;gap:20px}
 
 <script>
 // WhatsApp
-const WA = "https://wa.me/5511942278921?text=" + encodeURIComponent("Olá Matheus, vim pelo seu site e gostaria de agendar uma consulta.");
+// Se a pessoa chegou pelo /links (?de=instagram, tiktok...), a mensagem diz de onde ela veio
+const ORIGENS = {instagram:"Instagram", tiktok:"TikTok", google:"Google", facebook:"Facebook"};
+let de = "";
+try { de = (new URLSearchParams(location.search).get("de") || "").toLowerCase(); } catch(e) {}
+const origem = ORIGENS[de] ? "vim pelo " + ORIGENS[de] + " (pelo seu site)" : "vim pelo seu site";
+const WA = "https://wa.me/5511942278921?text=" + encodeURIComponent("Olá Matheus, " + origem + " e gostaria de saber mais sobre o seu trabalho.");
 document.querySelectorAll("a.wa").forEach(a=>{a.href=WA;a.target="_blank";a.rel="noopener"});
 
 // Rede de conexões no topo
